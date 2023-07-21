@@ -3,7 +3,7 @@ from pdf2image import convert_from_path
 from pytesseract import image_to_string
 
 def extract_text_from_image(image):
-    text = image_to_string(image)
+    text = image_to_string(image, lang='chi_tra')
     return text
 
 def extract_text_from_pdf(file_path):
